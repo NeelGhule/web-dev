@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Nikolina Petlos Art</title>
@@ -8,69 +9,90 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>   
-    a{
-        text-decoration: none;
-         color: inherit; 
-    }  
-        body {
-            margin: 0; 
-            padding: 0; 
-            height: 100vh; 
-            background-image: url('https://dvqlxo2m2q99q.cloudfront.net/000_clients/405980/page/danubiana-new-photo-index-ver2-text-ddf0a6.jpg');
-            background-size: cover; 
-            background-repeat: no-repeat; 
-            background-position: center; 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
+        body {
+            min-height: 100vh;
+            background-image: url('https://dvqlxo2m2q99q.cloudfront.net/000_clients/405980/page/danubiana-new-photo-index-ver2-text-ddf0a6.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 16px;
+        }
+        
         #topHeading {
             font-family: "Fjalla One", sans-serif;
-            font-size: 43px;
+            font-size: 2.7rem;
             font-weight: lighter;
             color: black;
-            letter-spacing: -1px;   
-            margin-top: 20px;
-            margin-left: 15px;
+            letter-spacing: -0.0625rem;
+            margin-top: 1.25rem;
+            margin-left: 0.9375rem;
         }
+
         ul.upper {
             list-style-type: none;
             font-family: "PT Sans Narrow", sans-serif;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: rgb(56, 56, 56);
-            letter-spacing: 0px;
+            padding-left: 1rem;
         }
         
-        ul.lower{
+        ul.lower {
             list-style-type: none;
             font-family: "PT Sans Narrow", sans-serif;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: rgb(56, 56, 56);
-            letter-spacing: 0px;
-            font-weight: normal;
-            text-decoration: none;
-            color: inherit ;
-            margin-left: -15px;
+            padding-left: 2rem;
         }
-        ul li{
-            margin-bottom: 4px;
-            margin-top: 2px;
-        }
-        li a{
-            transition: transform 0.3s, color 0.3s;
-        }
-        li a:hover {
-            color: rgba(16, 64, 146, 0.758);
 
-            transform: scale(2);
+        ul li {
+            margin-bottom: 0.25rem;
+        }
+
+        li a {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, color 0.3s;
+}
+
+        li a:hover {
+    color: rgba(16, 64, 146, 0.758);
+    transform: scale(1.1);
+}
+        
+        .footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            #topHeading {
+                font-size: 2rem;
+            }
+            ul.upper {
+                font-size: 1rem;
+            }
+            ul.lower {
+                font-size: 0.75rem;
+                padding-left: 1rem;
+            }
         }
     </style>
-</head> 
+</head>
 <body>
-    <h3 id="topHeading"><a href="">NIKOLINA <br>PETOLAS</a></h3>
+    <h3 id="topHeading"><a href="" style="color: black; text-decoration: none;">NIKOLINA <br>PETOLAS</a></h3>
     <ul class="upper">
         <li><a href="inThePalace.html">PORTFOLIO</a></li>
         <ul class="lower">
@@ -90,14 +112,15 @@
         <li><a href="">BLOG</a></li>
         <li><a href="">FAQ</a></li>
         <li><a href="">CONTACT</a></li>
-
-        <div class="footer">
-            <div class="social-icons">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-        </div>
     </ul>
+    
+    <div class="footer">
+        <div class="social-icons">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </div>
 </body>
 </html>
+
